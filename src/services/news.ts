@@ -60,10 +60,11 @@ export default function useNews({
   }, [])
 
   useEffect(() => {
-    setInterval(() => {
-      console.log('refetch')
+    const intervalId = setInterval(() => {
       if (isNewsList) getAllItems()
     }, 60000)
+
+    return () => clearInterval(intervalId)
   }, [])
 
   return {
