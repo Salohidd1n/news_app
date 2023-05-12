@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #0b0f30;
+
+  .basicInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .info {
+      h2 {
+        color: #496e91;
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+        margin-top: 8px;
+      }
+    }
+    .more {
+      line-height: 20px;
+      width: 200px;
+      margin-top: 6px;
+      color: #496e91;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      svg {
+        transition: 0.2s all ease-in-out;
+      }
+      &:hover {
+        svg {
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+}

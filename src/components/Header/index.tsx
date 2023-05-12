@@ -28,7 +28,7 @@ const Header: FC = () => {
           </IconButton>
           <NavLink to='/'>
             <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
-              NEWS
+              POSTS
             </Typography>
           </NavLink>
         </Toolbar>

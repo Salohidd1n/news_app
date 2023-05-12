@@ -1,7 +1,7 @@
 import { Navigate, useRoutes } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
-import NewsContainer from '../views/News'
-import NewsOneContainer from '../views/News/Single'
+import PostsContainer from '../views/Posts'
+import PostOneContainer from '../views/Posts/Single'
 
 export const publicRoutes = [
   {
@@ -9,11 +9,11 @@ export const publicRoutes = [
     children: [
       {
         path: '/',
-        element: <NewsContainer />
+        element: <PostsContainer />
       },
       {
-        path: '/news/:id',
-        element: <NewsOneContainer />
+        path: '/posts/:id',
+        element: <PostOneContainer />
       }
     ]
   },
